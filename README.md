@@ -1,101 +1,102 @@
-AgentScope Examples
+# AgentScope Examples
 
-Este repositório contém exemplos práticos de uso do AgentScope para criação de agentes baseados em LLMs.
+Este repositório contém exemplos práticos de uso do **AgentScope** para criação de agentes baseados em **LLMs**.
 
-O objetivo é servir como um playground para testar:
+O objetivo é servir como um **playground** para testar:
 
-Agentes ReAct
+- Agentes ReAct  
+- Memória de agentes  
+- Sistemas multi-agente  
+- Integração com MCP  
+- Modelos locais (Ollama) e APIs (Groq)  
 
-Memória de agentes
+---
 
-Sistemas multi-agente
+## Arquivos
 
-Integração com MCP
+### Installation_Agent_Scope.ipynb
+Notebook de **instalação e configuração do ambiente**.  
+👉 Use este **primeiro**.
 
-Modelos locais (Ollama) e APIs (Groq)
+---
 
-Arquivos
-Installation_Agent_Scope.ipynb
-
-Notebook de instalação e configuração do ambiente.
-👉 Use este primeiro.
-
-Agent_Scope_Call_GROQ.ipynb
-
-Exemplo simples de chamada de LLM usando Groq API.
-
-Mostra como:
-
-configurar a API
-
-criar um agente
-
-enviar prompts
-
-Agent_Scope_Memory.ipynb
-
-Exemplo de agente com memória.
+### Agent_Scope_Call_GROQ.ipynb
+Exemplo simples de chamada de LLM usando **Groq API**.
 
 Mostra como:
+- configurar a API  
+- criar um agente  
+- enviar prompts  
 
-o agente mantém histórico
+---
 
-usa interações passadas no raciocínio
-
-agentscope_memory.db
-
-Banco SQLite usado pelo exemplo de memória.
-
-Guarda o estado do agente entre execuções.
-
-Agente_Scope_MCP.ipynb
-
-Exemplo de uso do MCP (Model Context Protocol).
+### Agent_Scope_Memory.ipynb
+Exemplo de agente com **memória**.
 
 Mostra como:
+- o agente mantém histórico  
+- usa interações passadas no raciocínio  
 
-conectar agentes a ferramentas externas
+---
 
-usar contexto dinâmico
+### agentscope_memory.db
+Banco **SQLite** usado pelo exemplo de memória.
 
-Multi_Agent_Scope_MCP.ipynb
+- Guarda o estado do agente entre execuções.
 
-Exemplo de sistema multi-agente.
+---
+
+### Agente_Scope_MCP.ipynb
+Exemplo de uso do **MCP (Model Context Protocol)**.
+
+Mostra como:
+- conectar agentes a ferramentas externas  
+- usar contexto dinâmico  
+
+---
+
+### Multi_Agent_Scope_MCP.ipynb
+Exemplo de **sistema multi-agente**.
 
 Mostra:
+- vários agentes com papéis diferentes  
+- orquestração entre agentes  
 
-vários agentes com papéis diferentes
+---
 
-orquestração entre agentes
-
-ReAct_Agent_Example.py
-
-Exemplo em Python puro de um ReAct Agent.
+### ReAct_Agent_Example.py
+Exemplo em **Python puro** de um ReAct Agent.
 
 Mostra:
+- padrão Reason + Act  
+- uso de ferramentas  
+- integração com Ollama  
 
-padrão Reason + Act
+---
 
-uso de ferramentas
+### Modelfile_gpt_oss_safe
+Arquivo de configuração de modelo para **Ollama**.
 
-integração com Ollama
+- Usado para criar um modelo local customizado.
 
-Modelfile_gpt_oss_safe
+---
 
-Arquivo de configuração de modelo para Ollama.
+## Ordem recomendada de estudo
 
-Usado para criar um modelo local customizado.
+1. Installation_Agent_Scope.ipynb  
+2. Agent_Scope_Call_GROQ.ipynb  
+3. Agent_Scope_Memory.ipynb  
+4. ReAct_Agent_Example.py  
+5. Agente_Scope_MCP.ipynb  
+6. Multi_Agent_Scope_MCP.ipynb  
 
-Ordem recomendada de estudo
+---
 
-Installation_Agent_Scope.ipynb
+## Observação
 
-Agent_Scope_Call_GROQ.ipynb
+Arquivos sensíveis **não são versionados**:
 
-Agent_Scope_Memory.ipynb
+- `.env`  
+- chaves de API  
 
-ReAct_Agent_Example.py
-
-Agente_Scope_MCP.ipynb
-
-Multi_Agent_Scope_MCP.ipynb
+Use sempre variáveis de ambiente.
