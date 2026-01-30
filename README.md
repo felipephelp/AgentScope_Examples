@@ -1,26 +1,24 @@
-# AgentScope_Examples
 AgentScope Examples
 
 Este repositório contém exemplos práticos de uso do AgentScope para criação de agentes baseados em LLMs.
 
 O objetivo é servir como um playground para testar:
 
-agentes ReAct
+Agentes ReAct
 
-memória de agentes
+Memória de agentes
 
-sistemas multi-agente
+Sistemas multi-agente
 
-integração com MCP
+Integração com MCP
 
-modelos locais (Ollama) e APIs (Groq)
+Modelos locais (Ollama) e APIs (Groq)
 
 Arquivos
 Installation_Agent_Scope.ipynb
 
 Notebook de instalação e configuração do ambiente.
-
-Use este primeiro.
+👉 Use este primeiro.
 
 Agent_Scope_Call_GROQ.ipynb
 
@@ -28,7 +26,7 @@ Exemplo simples de chamada de LLM usando Groq API.
 
 Mostra como:
 
-configurar API
+configurar a API
 
 criar um agente
 
@@ -88,7 +86,7 @@ Arquivo de configuração de modelo para Ollama.
 
 Usado para criar um modelo local customizado.
 
-Ordem recomendada
+Ordem recomendada de estudo
 
 Installation_Agent_Scope.ipynb
 
